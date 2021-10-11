@@ -210,6 +210,11 @@ const Maze = () => {
           }
         }
       }
+      if (min === Infinity) {
+        alert("There is no valid path.");
+        setActive(false);
+        return;
+      }
 
       currentCoords = minCoords;
 
